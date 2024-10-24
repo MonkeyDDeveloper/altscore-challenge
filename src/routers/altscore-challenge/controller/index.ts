@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import path from "path";
 
-const viewsPath = path.join(__dirname, "..", "..", "..", "views")
+const viewsPath = path.join(__dirname, "views")
 
 class AltScoreController {
 
