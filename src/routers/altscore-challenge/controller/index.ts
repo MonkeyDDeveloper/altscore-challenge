@@ -12,7 +12,16 @@ class AltScoreController {
     }
 
     GetRepairBay(_req: Request, res: Response) {
-        return res.status(200).sendFile(path.join(viewsPath, "sistema_averiado.html"))
+        return res.status(200).setHeader("Content-Type", "text/html").send(`
+            <!DOCTYPE html>
+            <html>
+                <head>
+                    <title>Repair</title>
+                </head>
+            <body>
+                <div class="anchor-point">SHLD-05</div>
+            </body>
+        </html>`)
     }
 
     PostTeapot(_req: Request, res: Response) {
