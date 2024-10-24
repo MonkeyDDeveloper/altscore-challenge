@@ -7,7 +7,7 @@ class AltScoreController {
 
     GetStatus(_req: Request, res: Response) {
         return res.status(200).json({
-            damaged_system: "SHLD-05"
+            damaged_system: "deflector_shield"
         })
     }
 
