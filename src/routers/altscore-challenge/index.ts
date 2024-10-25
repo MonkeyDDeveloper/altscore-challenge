@@ -11,6 +11,10 @@ altscoreRouter.get("/repair-bay", (req, res) => {
     AltController.GetRepairBay(req, res)
 })
 
+altscoreRouter.get("/phase-change-diagram", (req, res) => {
+    AltController.GetPhaseChangeDiagram(req, res)
+})
+
 altscoreRouter.post("/teapot", (req, res) => {
     AltController.PostTeapot(req, res)
 })
