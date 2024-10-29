@@ -19,10 +19,10 @@ export default function interpolateVolumes(pressure: number): SpecificVolume {
     // Interpolación para el volumen de vapor
     const specific_volume_vapor = v_g1 + ((pressure - p1) * (v_g2 - v_g1)) / (p2 - p1);
 
-    const roundTo4Decimals = (value: number) => parseFloat(value.toFixed(4));
+    // const roundTo4Decimals = (value: number) => parseFloat(value.toFixed(4));
 
     return {
-        specific_volume_liquid: roundTo4Decimals(specific_volume_liquid),
-        specific_volume_vapor: roundTo4Decimals(specific_volume_vapor)
+        specific_volume_liquid: specific_volume_liquid,
+        specific_volume_vapor: specific_volume_vapor
     };
 }
